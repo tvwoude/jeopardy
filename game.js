@@ -81,7 +81,7 @@ const doubleJeopardyCategories = [
     ]
   },
   {
-    category: "School Shootings",
+    category: "School Safety",
     questions: [
       { q: "This type of program is designed to prepare students for emergencies at school.", a: "What is a lockdown drill?", value: 400 },
       { q: "This law in the US regulates gun possession in schools.", a: "What is the Gun-Free School Zones Act?", value: 800 },
