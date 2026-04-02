@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jeopardy Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎮 Jeopardy Player Screen</h1>
+  <div id="board"></div>
+  <div id="scores"></div>
+
+  <!-- Updated question popup -->
+  <div id="question-popup" style="display:none;">
+    <h2 id="question-text"></h2>
+    
+    <!-- Hidden on player screen so JS doesn’t break -->
+    <p id="answer-text" style="margin-top:20px; font-size:24px; text-align:center;"></p>
+    <button id="done-btn" style="display:none;">Done</button>
+  </div>
+  <script>
+    // Detect host mode via ?host=1
+    window.isHost = window.location.search.includes("host=1");
+  </script>
+  <script src="game.js"></script>
+</body>
+</html>
+
+
